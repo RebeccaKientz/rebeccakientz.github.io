@@ -1,0 +1,126 @@
+/*The style for the body*/
+body {
+	width: 90%;
+	max-width: 1024px;
+	background: black;
+	background-image: url("../images/about_.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin: auto; 
+	font-family: 'Barlow Condensed', sans-serif;
+	
+
+}
+/*The style for the header*/
+
+header{
+	height: 150%;
+	padding-top: 30px;
+	text-align: center;
+
+}
+#container {
+	position: relative;
+}
+#id {
+	padding-bottom: 40px;
+}
+#main_nav {
+	list-style: none;
+	text-align: center;
+	margin:0;
+	padding-left: 1em;
+	font: inherit;
+	font-size:175%;
+	text-transform: uppercase;
+}
+
+#main_nav li{
+	display: inline-block;
+}
+#main_nav li a {
+	text-decoration: none;
+	color: white;
+	
+	height: 192px;
+	
+	padding-right: 6px;
+	text-align:center;
+}
+section {
+	background: whitesmoke;
+	padding:4% 5% 6% 5%;
+	margin: 3% 3% 3% 10%;
+	font-size: 120%;
+	width: 80%;
+	float: left;
+	
+}
+section h2 {
+	color: #0F101E;
+}
+
+
+section p {
+	margin: auto;
+	padding: 6px auto;
+	font-size: 130%;
+	color: #0F101E;
+}
+
+footer {
+	clear: float;
+	font-family: inherit;
+	text-align: center;
+	padding: 15% auto;
+	margin: 15% auto;
+}
+#social_media{
+	margin: 15% auto;
+}
+footer nav li {
+	color: white;
+	display: inline-block;
+	font-size: 135%;
+	
+}
+nav li, nav ul {
+	list-style: none;
+	margin: 0 1.4%;
+}
+/* mobile portrait layout (479px or less) */
+@media only screen and (min-width: 768px) {
+	#main_nav {
+		font-size:120%
+	}
+	body {
+		font-size: 90%;
+	}
+}
+
+/*mobile landscape layout (480px to 767px)*/
+@media only screen and (min-width: 480px) {
+background {
+	width: 100%;
+	height: auto;
+}
+
+}
+
+/* tablet portrait layout (767px to 959px)*/
+@media only screen and (min-width: 768px) {
+background {
+	width: 100%;
+	height: auto;
+
+}
+
+/* tablet landscape and desktop layout (960px or more)*/
+@media only screen and (min-width: 768px) {
+background {
+	width:100%;
+	height:auto;
+} 
+
+}
