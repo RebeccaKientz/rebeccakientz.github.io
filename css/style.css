@@ -1,0 +1,253 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #111;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/*############  navigation ##########################*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 12vh;
+  background-color: #111;
+}
+.logo {
+  display: flex;
+  margin: 0.8em 0 0.5em 0;
+  max-height: 14vh;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #f4f4f4;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 0.6em;
+}
+.nav-links a:hover {
+  border-bottom: 2px solid #eac67a;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #f4f4f4;
+  margin: 5px;
+}
+
+/*############  images ##########################*/
+.pimg1 {
+  background-image: url("../img/laptop.jpg");
+  min-height: 100%;
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.pimg2 {
+  background-image: url("../img/work.jpg");
+  min-height: 75%;
+  max-height: 50%;
+}
+.pimg3 {
+  background-image: url("../img/sunset.jpg");
+  min-height: 75%;
+}
+/*############  section ##########################*/
+section a {
+  text-decoration: none;
+  color: #111;
+}
+section p a {
+  text-decoration: none;
+  color: #eac67a;
+  font-size: 20px;
+}
+section p a:hover {
+  color: #f4f4f4;
+}
+.skills .techSkills .designSkills li {
+  list-style: none;
+  padding: 0 4px;
+}
+.section .skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px auto;
+}
+
+.techSkills .designSkills {
+  flex-direction: column;
+}
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+.section .pages li a {
+  display: block;
+  text-decoration: none;
+}
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+.helpSection {
+  margin-bottom: 16px;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+.ptext .border .trans {
+  background-color: transparent;
+}
+.ptext .border #email-link {
+  text-decoration: none;
+  color: #eac67a;
+}
+.ptext .border .message:hover {
+  background-color: #96858f;
+}
+.ptext .border #email-link:hover {
+  color: #fff;
+}
+#emailImage {
+  height: 0.8em;
+  width: 1.2em;
+  left: 11%;
+  top: 33%;
+  z-index: 1;
+}
+/*############  footer ##########################*/
+footer {
+  font-size: 12px;
+}
+footer a {
+  color: #eac67a;
+  font-size: 18px;
+}
+footer a:hover {
+  color: #fff;
+  opacity: 100%;
+}
+/*############  media ##########################*/
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translatex(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .logo img {
+    max-width: 320px;
+    max-height: 56px;
+  }
+
+  .section .skills {
+    display: block;
+    padding: 4px auto;
+    align-content: space-around;
+  }
+  .techSkills {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .designSkills {
+    float: none;
+    width: 100%;
+  }
+  h3 {
+    font-size: 26px;
+  }
+}
+.skills ul {
+  list-style-type: none;
+}
+.nav-active {
+  transform: translateX(0%);
+  z-index: 1;
+}
+@media screen and (max-width: px) {
+  body {
+    display: none;
+  }
+}
