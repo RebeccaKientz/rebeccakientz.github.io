@@ -241,6 +241,9 @@ footer a:hover {
   .ptext {
     font-size: 80%;
 }
+  footer a {
+  font-size: 60%;
+  }
 }
 .skills ul {
   list-style-type: none;
