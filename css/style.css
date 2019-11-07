@@ -8,6 +8,9 @@ html {
   line-height: 1.8em;
   color: #111;
 }
+body {
+  padding-top: calc(12vh + 1.3em);
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -20,6 +23,10 @@ nav {
   align-items: center;
   min-height: 12vh;
   background-color: #111;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 .logo {
   display: flex;
@@ -191,6 +198,7 @@ footer a:hover {
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
+    padding-top: 12vh;
   }
   .nav-links {
     position: absolute;
@@ -240,9 +248,9 @@ footer a:hover {
   }
   .ptext {
     font-size: 80%;
-}
+  }
   footer a {
-  font-size: 16px;
+    font-size: 16px;
   }
 }
 .skills ul {

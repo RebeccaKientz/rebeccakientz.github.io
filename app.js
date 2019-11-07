@@ -9,6 +9,9 @@ const navSlide = () => {
   //animate links
   navLinks.forEach(link => {
     link.style.animation = "navLinkFade 0.5s ease forwards";
+    link.addEventListener("click", () => {
+      nav.classList.toggle("nav-active");
+    });
   });
 };
 
