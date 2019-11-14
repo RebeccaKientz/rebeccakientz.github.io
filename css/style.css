@@ -214,10 +214,16 @@ footer a:hover {
     transition: transform 0.5s ease-in;
   }
   .pimg1,
-  .pimg2,
   .pimg3 {
     object-fit: cover;
     max-width: 100%;
+  }
+  .pimg2 {
+    align-content: center;
+    object-fit: cover;
+    max-width: 100%;
+    background-size: contain;
+    min-height: 80%;
   }
 
   .burger {
