@@ -87,8 +87,10 @@ nav {
 
 .pimg2 {
   background-image: url("../img/work.jpg");
+  background-color: lightgray;
   min-height: 75%;
   max-height: 50%;
+  max-width: 90%;
 }
 .pimg3 {
   background-image: url("../img/sunset.jpg");
@@ -223,7 +225,7 @@ footer a:hover {
     object-fit: cover;
     max-width: 100%;
     background-size: contain;
-    min-height: 80%;
+    min-height: 55%;
   }
 
   .burger {
