@@ -87,10 +87,10 @@ nav {
 
 .pimg2 {
   background-image: url("../img/work.jpg");
-  background-color: lightgray;
+
   min-height: 75%;
   max-height: 50%;
-  max-width: 90%;
+  max-width: 100%;
 }
 .pimg3 {
   background-image: url("../img/sunset.jpg");
